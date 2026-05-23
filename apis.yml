@@ -1,0 +1,247 @@
+aid: gong-io
+url: https://raw.githubusercontent.com/api-evangelist/gong-io/refs/heads/main/apis.yml
+name: Gong
+kind: company
+description: >-
+  Gong is the Revenue AI platform that captures customer interactions across
+  phone, web conferencing, and email, then applies conversation intelligence and
+  generative AI to coach reps, forecast pipeline, and surface deal risk. Gong
+  exposes a REST API at api.gong.io covering Calls, Users, Stats, Library,
+  Settings, Workspaces, Permissions, Data Privacy, CRM, Logs, Engagement, and
+  webhook-style automation rules, plus an outbound data integrations program for
+  pushing call recordings, transcripts, and metadata into Gong from third-party
+  telephony and conferencing systems.
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+  - Revenue Intelligence
+  - Conversation Intelligence
+  - Sales
+  - AI
+  - CRM
+  - Coaching
+  - Forecasting
+created: '2026-05-23'
+modified: '2026-05-23'
+specificationVersion: '0.19'
+apis:
+  - aid: gong-io:public-api
+    name: Gong Public API
+    description: >-
+      Gong's primary REST API for reading and writing platform data — calls,
+      users, stats, library content, settings, workspaces, permissions, data
+      privacy, CRM data, audit logs, and engagement. Authentication is via Basic
+      auth (access key + secret) generated in the Gong company settings.
+    humanURL: https://app.gong.io/settings/api/documentation
+    baseURL: https://api.gong.io/v2
+    tags:
+      - REST
+      - Calls
+      - Users
+      - Stats
+    properties:
+      - type: Documentation
+        url: https://app.gong.io/settings/api/documentation
+      - type: APIReference
+        url: https://app.gong.io/settings/api/documentation
+  - aid: gong-io:calls-api
+    name: Gong Calls API
+    description: >-
+      Endpoints for retrieving call metadata, transcripts, media URLs, extensive
+      filtering, and adding new calls (recordings and metadata) from external
+      telephony and conferencing platforms.
+    humanURL: https://app.gong.io/settings/api/documentation#/Calls
+    baseURL: https://api.gong.io/v2/calls
+    tags:
+      - Calls
+      - Transcripts
+      - Recordings
+    properties:
+      - type: Documentation
+        url: https://app.gong.io/settings/api/documentation#/Calls
+  - aid: gong-io:users-api
+    name: Gong Users API
+    description: >-
+      Endpoints for listing and managing Gong users, their roles, manager
+      relationships, and metadata used for permissioning and reporting.
+    humanURL: https://app.gong.io/settings/api/documentation#/Users
+    baseURL: https://api.gong.io/v2/users
+    tags:
+      - Users
+      - Roles
+    properties:
+      - type: Documentation
+        url: https://app.gong.io/settings/api/documentation#/Users
+  - aid: gong-io:stats-api
+    name: Gong Stats API
+    description: >-
+      Aggregated statistics for activity, interaction, and rep-level metrics —
+      used to back dashboards, scorecards, and external BI integrations.
+    humanURL: https://app.gong.io/settings/api/documentation#/Stats
+    baseURL: https://api.gong.io/v2/stats
+    tags:
+      - Stats
+      - Analytics
+      - Reporting
+    properties:
+      - type: Documentation
+        url: https://app.gong.io/settings/api/documentation#/Stats
+  - aid: gong-io:library-api
+    name: Gong Library API
+    description: >-
+      Endpoints for browsing Gong libraries and folders, retrieving call lists
+      inside a folder, and managing the curated learning content shared across
+      teams.
+    humanURL: https://app.gong.io/settings/api/documentation#/Library
+    baseURL: https://api.gong.io/v2/library
+    tags:
+      - Library
+      - Folders
+      - Coaching
+    properties:
+      - type: Documentation
+        url: https://app.gong.io/settings/api/documentation#/Library
+  - aid: gong-io:settings-api
+    name: Gong Settings API
+    description: >-
+      Read and update tenant-level configuration — trackers, scorecards, and
+      tracking settings used by Gong to score calls and surface signals.
+    humanURL: https://app.gong.io/settings/api/documentation#/Settings
+    baseURL: https://api.gong.io/v2/settings
+    tags:
+      - Settings
+      - Trackers
+      - Scorecards
+    properties:
+      - type: Documentation
+        url: https://app.gong.io/settings/api/documentation#/Settings
+  - aid: gong-io:workspaces-api
+    name: Gong Workspaces API
+    description: >-
+      Manage Gong workspaces — the isolation boundary used for multi-tenant or
+      multi-business-unit Gong deployments.
+    humanURL: https://app.gong.io/settings/api/documentation#/Workspaces
+    baseURL: https://api.gong.io/v2/workspaces
+    tags:
+      - Workspaces
+      - Tenants
+    properties:
+      - type: Documentation
+        url: https://app.gong.io/settings/api/documentation#/Workspaces
+  - aid: gong-io:permissions-api
+    name: Gong Permissions API
+    description: >-
+      Endpoints for listing and managing permission profiles and access controls
+      applied to Gong users and content.
+    humanURL: https://app.gong.io/settings/api/documentation#/Permissions
+    baseURL: https://api.gong.io/v2/permissions
+    tags:
+      - Permissions
+      - RBAC
+      - Security
+    properties:
+      - type: Documentation
+        url: https://app.gong.io/settings/api/documentation#/Permissions
+  - aid: gong-io:data-privacy-api
+    name: Gong Data Privacy API
+    description: >-
+      Endpoints supporting GDPR / CCPA workflows — locate, export, and purge
+      personal data stored in Gong on behalf of an individual.
+    humanURL: https://app.gong.io/settings/api/documentation#/Data-Privacy
+    baseURL: https://api.gong.io/v2/data-privacy
+    tags:
+      - Privacy
+      - GDPR
+      - CCPA
+    properties:
+      - type: Documentation
+        url: https://app.gong.io/settings/api/documentation#/Data-Privacy
+  - aid: gong-io:crm-api
+    name: Gong CRM API
+    description: >-
+      Endpoints for reading CRM object schema and data Gong has ingested from
+      connected CRMs (Salesforce, HubSpot, Dynamics), and for pushing engagement
+      activity back into the CRM context.
+    humanURL: https://app.gong.io/settings/api/documentation#/CRM
+    baseURL: https://api.gong.io/v2/crm
+    tags:
+      - CRM
+      - Salesforce
+      - HubSpot
+    properties:
+      - type: Documentation
+        url: https://app.gong.io/settings/api/documentation#/CRM
+  - aid: gong-io:logs-api
+    name: Gong Logs API
+    description: >-
+      Audit log endpoints for retrieving user activity, configuration changes,
+      and access events used in compliance and SIEM workflows.
+    humanURL: https://app.gong.io/settings/api/documentation#/Logs
+    baseURL: https://api.gong.io/v2/logs
+    tags:
+      - Audit
+      - Logs
+      - Compliance
+    properties:
+      - type: Documentation
+        url: https://app.gong.io/settings/api/documentation#/Logs
+  - aid: gong-io:engagement-api
+    name: Gong Engagement API
+    description: >-
+      Engagement endpoints surfacing email and meeting touchpoints between reps
+      and prospects, used for activity analytics and pipeline hygiene.
+    humanURL: https://app.gong.io/settings/api/documentation#/Engagement
+    baseURL: https://api.gong.io/v2/engagement
+    tags:
+      - Engagement
+      - Activity
+      - Email
+    properties:
+      - type: Documentation
+        url: https://app.gong.io/settings/api/documentation#/Engagement
+common:
+  - type: Website
+    url: https://www.gong.io
+  - type: Documentation
+    url: https://app.gong.io/settings/api/documentation
+  - type: APIReference
+    url: https://app.gong.io/settings/api/documentation
+  - type: Help
+    url: https://app.gong.io/help
+  - type: GettingStarted
+    url: https://app.gong.io/help/docs/api
+  - type: SignIn
+    url: https://app.gong.io
+  - type: Pricing
+    url: https://www.gong.io/pricing
+  - type: Blog
+    url: https://www.gong.io/blog
+  - type: Status
+    url: https://status.gong.io
+  - type: PrivacyPolicy
+    url: https://www.gong.io/privacy-policy
+  - type: TermsOfService
+    url: https://www.gong.io/terms-of-service
+  - type: Trust
+    url: https://www.gong.io/trust-center
+  - type: Security
+    url: https://www.gong.io/trust-center/security
+  - type: GitHub
+    url: https://github.com/gong-io
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/gong-io
+  - type: Twitter
+    url: https://x.com/gong_io
+integrations:
+  - name: Salesforce
+  - name: HubSpot
+  - name: Microsoft Dynamics 365
+  - name: Zoom
+  - name: Microsoft Teams
+  - name: Google Meet
+  - name: Webex
+  - name: Slack
+  - name: Outreach
+  - name: Salesloft
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
