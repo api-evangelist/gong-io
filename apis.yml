@@ -11,7 +11,7 @@ description: >-
   webhook-style automation rules, plus an outbound data integrations program for
   pushing call recordings, transcripts, and metadata into Gong from third-party
   telephony and conferencing systems.
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 tags:
   - Revenue Intelligence
   - Conversation Intelligence
