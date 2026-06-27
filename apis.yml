@@ -209,7 +209,7 @@ common:
     url: https://app.gong.io/help
   - type: GettingStarted
     url: https://app.gong.io/help/docs/api
-  - type: SignIn
+  - type: Login
     url: https://app.gong.io
   - type: Pricing
     url: https://www.gong.io/pricing
