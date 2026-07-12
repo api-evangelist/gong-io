@@ -199,6 +199,10 @@ apis:
       - type: Documentation
         url: https://app.gong.io/settings/api/documentation#/Engagement
 common:
+  - type: TrustCenter
+    url: security/gong-io-trust-center.yml
+  - type: DomainSecurity
+    url: security/gong-io-domain-security.yml
   - type: Website
     url: https://www.gong.io
   - type: Documentation
